@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<style type="text/css">
+		body {
+			background-image: url(1.jpg);
+			background-size: cover;
+		}
+
+		.img1 {
+			width: 150px;
+			margin-top: 500px;
+			margin-left: 50px;
+			position: absolute;
+		}
+		.img2 {
+			width: 150px;
+			margin-top: 500px;
+			margin-left: 1200px;
+			position: absolute;
+		}
+		.img3 {
+			width: 150px;
+			margin-top: 600px;
+			margin-left: 600px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div class="" style="width: 200px; height: 330px; background: gray;">
+	    <h1 class="text-white" style="font-size: 30px;">Найди вьетнамского снайпера</h1>
+	    <h1 class="text-white pat1" style="font-size: 20px; margin-top: 20px;">Cнайпера №1</h1>
+	    <h1 class="text-white pat2" style="font-size: 20px;">Cнайпера №2</h1>
+	    <h1 class="text-white pat3" style="font-size: 20px;">Cнайпера №3</h1>
+	    <h1 class="text-white" style="font-size: 40px;">Мои очки</h1>
+	    <h1 class="text-white text-center text1"><span class="text1">0</span></h1>
+    </div>
+	<img src="Дизайн_без_названия-removebg-preview.png" class="img1">
+	<img src="Дизайн_без_названия-removebg-preview.png" class="img2">
+	<img src="Дизайн_без_названия-removebg-preview.png" class="img3">
+
+
+<script type="text/javascript">
+	let bullet = 0;
+
+
+	document.querySelector('.img1').onclick = function() {
+		bullet = bullet + 1;
+		document.querySelector('.text1').innerHTML = bullet; 
+		document.querySelector('.img1').style.display = "none";
+		document.querySelector('.pat1').style.textDecoration = "line-through";  
+	}
+	document.querySelector('.img2').onclick = function() {
+		bullet = bullet + 1;
+		document.querySelector('.text1').innerHTML = bullet; 
+		document.querySelector('.img2').style.display = "none";
+		document.querySelector('.pat2').style.textDecoration = "line-through";  
+	}
+	document.querySelector('.img3').onclick = function() {
+		bullet = bullet + 1;
+		document.querySelector('.text1').innerHTML = bullet; 
+		document.querySelector('.img3').style.display = "none";
+		document.querySelector('.pat3').style.textDecoration = "line-through";  
+	}
+</script>	
+</body>
+</html>
